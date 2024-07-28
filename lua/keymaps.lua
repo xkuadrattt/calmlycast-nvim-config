@@ -15,4 +15,3 @@ vim.keymap.set('n', '<leader>x', ':bdelete<CR>', {noremap = true, silent = true}
 
 
 vim.keymap.set('n', '<C-/>', ':CommentToggle<CR>')
--- hehe

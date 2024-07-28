@@ -23,7 +23,7 @@ return {
 			})
 
 			lspconfig.emmet_ls.setup({
-				cmd = { "emmet-ls", "--stdio" },
+				-- cmd = { "emmet-ls", "--stdio" },
 				filetypes = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact", "vue" },
 				init_options = {
 					html = {
@@ -35,4 +35,7 @@ return {
 			})
 		end,
 	},
+	{
+		"lvimuser/lsp-inlayhints.nvim"
+	}
 }
