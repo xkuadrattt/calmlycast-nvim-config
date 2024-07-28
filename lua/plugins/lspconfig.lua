@@ -46,7 +46,6 @@ return {
 					end,
 				})
 
-				-- Enable inlay hints
 			end
 
 			lspconfig.tsserver.setup({

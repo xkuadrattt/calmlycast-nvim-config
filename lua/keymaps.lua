@@ -13,5 +13,7 @@ vim.keymap.set('n', '<tab>', ':BufferLineCycleNext<CR>')
 vim.keymap.set('n', '<S-tab>', ':BufferLineCyclePrev<CR>')
 vim.keymap.set('n', '<leader>x', ':bdelete<CR>', {noremap = true, silent = true})
 
+vim.keymap.set('n', 'gD', "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 
 vim.keymap.set('n', '<C-/>', ':CommentToggle<CR>')
