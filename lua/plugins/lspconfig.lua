@@ -5,6 +5,7 @@ return {
 			require("mason").setup()
 		end,
 	},
+
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
@@ -24,6 +25,7 @@ return {
 					},
 				},
 			})
+
 
 			lspconfig.emmet_ls.setup({
 				capabilities = capabilities,
@@ -45,7 +47,6 @@ return {
 						vim.lsp.buf.format({ async = false })
 					end,
 				})
-
 			end
 
 			lspconfig.tsserver.setup({
@@ -60,7 +61,7 @@ return {
 						},
 					},
 				},
-				filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 				settings = {
 					typescript = {
 						inlayHints = {
@@ -91,7 +92,11 @@ return {
 
 			lspconfig.volar.setup({})
 
-			lspconfig.cssls.setup{}
+			lspconfig.tailwindcss.setup({
+				 on_attach = on_attach,
+                    capabilities = capabilities,
+			})
+			lspconfig.cssls.setup({})
 		end,
 	},
 	{

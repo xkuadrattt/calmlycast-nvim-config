@@ -1,7 +1,7 @@
 vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal float toggle<CR>")
 vim.keymap.set('n', '<leader>ev', ':edit $MYVIMRC<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>sv', ':source $MYVIMRC<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
+vim.keymap.set('n', '<leader>ff', ':Telescope find_files theme=dropdown<CR>')
 vim.keymap.set('n', '<leader>of', ':Telescope oldfiles<CR>')
 vim.keymap.set('n', '<leader>fw', ':Telescope live_grep<CR>')
 vim.keymap.set('n', '<leader>th', ':Telescope colorscheme<CR>')

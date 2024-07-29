@@ -6,11 +6,11 @@ return {
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
 			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-buffer",
 		},
 		config = function()
 			local cmp = require("cmp")
 			local lspkind = require("lspkind")
-
 			cmp.setup({
 				snippet = {
 					-- REQUIRED - you must specify a snippet engine
