@@ -2,7 +2,7 @@ return {
 	{
 		"NvChad/nvim-colorizer.lua",
 		config = function()
-			require("colorizer").setup({"*"})
+			require("colorizer").setup({ "*" })
 		end,
 	},
 	{
@@ -13,5 +13,14 @@ return {
 				color_square_width = 2,
 			})
 		end,
+	},
+	{
+		"luckasRanarison/tailwind-tools.nvim",
+		dependencies = { "nvim-treesitter/nvim-treesitter" },
+		opts = {
+			document_color = {
+				kind = "background"
+			}
+		}, -- your configuration
 	},
 }

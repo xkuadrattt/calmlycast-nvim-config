@@ -7,6 +7,7 @@ return {
 			"rafamadriz/friendly-snippets",
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
+			'hrsh7th/cmp-path',
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -51,6 +52,7 @@ return {
 						before = function(entry, vim_item)
 							return vim_item
 						end,
+						require("tailwind-tools.cmp").lspkind_format
 					}),
 				},
 			})
